@@ -1,0 +1,109 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#header {
+  padding-top: 80px;
+  height: 600px;
+  background: url(../images/top.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about-img {
+  margin-top: 80px;
+  height: 200px;
+  background: url(../images/fallingwater.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contact-img {
+  margin-top: 80px;
+  height: 200px;
+  background: url(../images/technion.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+table {
+	padding: 10px 10px;
+}
+
+.social{
+	padding:0;
+	margin:7px 0 0 0;
+	float:right;
+	width:370px;
+}
+.social li{
+	text-indent:-9999999px;
+	display:block;
+	float:left;
+	margin:0 4px;
+}
+
+.social li.renren a{
+	background:url(../images/icon_renren.png) no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.social li.facebook a{
+	background:url(../images/icon_facebook.png) no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.social li.weibo a{
+	background:url(../images/icon_weibo.png) no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.social li.googleplus a{
+	background:url(../images/icon_googleplus.png) no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.social li.linkedin a{
+	background:url(../images/icon_linkedin.png) no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
+.social li a{
+	opacity:.5;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.social li a:hover{
+	opacity:1;
+}
+.maintext {
+	font-size: 18px;
+}
+
+.text-col-right {
+	padding-top: 20px;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}

@@ -1,0 +1,51 @@
+application: hyzhangwp
+
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /images/thumbs
+  static_dir: images/thumbs
+  secure: optional
+
+- url: /images
+  static_dir: images
+  secure: optional
+
+- url: /research
+  static_dir: research
+  secure: optional
+
+- url: /pre
+  static_dir: pre
+  secure: optional
+
+- url: /css
+  static_dir: css
+  secure: optional
+
+- url: /js
+  static_dir: js
+  secure: optional
+
+- url: /fonts
+  static_dir: fonts
+  secure: optional
+
+- url: /home
+  static_files: home.html
+  upload: home.html
+
+- url: /BingSiteAuth.xml
+  static_files: BingSiteAuth.xml
+  upload: BingSiteAuth.xml
+
+- url: /bdsitemap.txt
+  static_files: bdsitemap.txt
+  upload: bdsitemap.txt
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
