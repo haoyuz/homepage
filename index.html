@@ -65,9 +65,11 @@
 		<div class="col-md-8 text-col-right">
 		<p>	I am Haoyu Zhang (张浩宇), a first-year Ph.D. student in <a href="http://www.cs.princeton.edu/">Department of Computer Science</a> at <a href="http://www.princeton.edu">Princeton University</a>. My advisor is <a href="http://www.cs.princeton.edu/~mfreed/">Professor Michael Freedman</a>. My research interest lies in distributed systems and networking. Before coming to Princeton, I received my B.Sc. in Computer Science from <a href="http://eecs.pku.edu.cn">School of Electronics Engineering and Computer Science</a> at <a href="http://english.pku.edu.cn">Peking University</a>. I spent 2012--2013 winter semester at <a href="http://www.technion.ac.il">Technion---Israel Institute of Technology</a> as a research exchange student. I also received my B.A. in Economics (double major) from <a href="http://en.nsd.edu.cn">National School of Development</a>.</p>
 		<br/> <br/> 
-		<p>Email Address: haoyuz [AT] cs [DOT] princeton [DOT] edu</p>
+		<p>Email: haoyuz [AT] cs [DOT] princeton [DOT] edu</p>
 		<br/> <br/> 
-		<p><i>This website is still under construction...  Please visit here later. :)</i></p>
+        <!--
+        <p><i>This website is still under construction...  Please visit here later. :)</i></p>
+        -->
         </div>
         <div class="col-md-4">
 			<img src="./images/portrait.jpg" class="img-thumbnail" alt="My	Portrait.">
@@ -85,12 +87,27 @@
         <h1>Research</h1>
       </div>
 	  <p> Networking and distributed-systems researchers expend significant effort to answer some fundamental questions: How do we compute data efficiently at large scale? How do we ensure systems or protocols are reliable? How do we automatically and effectively manage resources?</p>
-	  <p> My current and past research addresses questions relating to <i>scalable, reliable, and manageable distributed systems</i>. I am improving the performance of <a>paralleled distributed transactions</a> within the cloud-based data storage framework. Previously, I was rethinking <a>network testbeds to provide more reliable and reproducible experiments</a> in the evaluation of distributed applications and network protocols at scale. I was further building a distributed <a>platform-as-a-service for automatically managing the implementation and deployment</a> of information systems and business logic.</p>
+      <p> My current and past research addresses questions relating to <i>scalable, reliable, and manageable distributed systems</i>. I am <a>improving the reliability of controller platform</a> in software-defined networking. Previously, I was rethinking <a>network testbeds to provide more reliable and reproducible experiments</a> in the evaluation of distributed applications and network protocols at scale. I was further building a distributed <a>platform-as-a-service for automatically managing the implementation and deployment</a> of information systems and business logic.</p>
      
       <div class="page-header" id="projects">
         <h1>Projects</h1>
       </div>
-	  <p><i>This part is still under construction...  Please visit here later. :)</i></p>
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h3 class="featurette-heading"> Ravana: Controller Fault-Tolerance in Software-Defined Networking</span></h3>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive img-thumbnail"  src="images/ravana-protocol.png" alt="Ravana Fault-Tolerant Controller">
+        </div>
+        <div class="col-md-7">
+          <p>SDN offer greater flexibility than traditional distributed architectures, at the risk of the controller being a single point-of-failure. Unfortunately, existing fault-tolerance techniques, such as replicated state machine, are insufficient to ensure correct network behavior under controller failures. The challenge is that, in addition to the application state of the controllers, the switches maintain hard state that must be handled consistently. Thus, it is necessary to incorporate switch state into the system model to correctly offer a &ldquo;logically centralized&rdquo; controller. </p>
+        </div>
+        <div class="col-md-12">
+<p>We introduce Ravana, a fault-tolerant SDN controller platform that processes the control messages transactionally and exactly once (at both the controllers and the switches). Ravana maintains these guarantees in the face of both controller and switch crashes. The key insight in Ravana is that replicated state machines can be extended with lightweight switch-side mechanisms to guarantee correctness, without involving the switches in an elaborate consensus protocol. Our prototype implementation of Ravana enables unmodified controller applications to execute in a fault-tolerant fashion. Experiments show that Ravana achieves high throughput with reasonable overhead, compared to a single controller, with a failover time under 100ms. [paper]</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
 <!--
       <div class="row featurette">
         <div class="col-md-7">
@@ -132,7 +149,7 @@
       </div>
 	  <div class="row">
         <div class="col-md-4">
-	      <img src="./images/qr.png" class="img-thumbnail" alt="My	Portrait.">
+	      <img src="./images/qr.png" class="img-thumbnail" alt="QR Code">
         </div>
 		<div class="col-md-8">
 		  <table>
@@ -160,7 +177,7 @@
 
 	  <hr>
       <footer>
-        <p>&copy; Haoyu Zhang, 2013-2014</p>
+        <p>&copy; Haoyu Zhang, 2013-2015</p>
       </footer>
 
     </div> <!-- /container -->
