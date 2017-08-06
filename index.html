@@ -46,7 +46,7 @@
             <li><a href="#">Home</a></li>
             <!-- For several sites, set the li to be "active" like the following -->
             <!-- <li class="active"><a href="#">Home</a></li> -->
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Publications</a></li>
             <li><a href="#about-img">About</a></li>
             <li><a href="#contact-img">Contact</a></li>
           </ul>
@@ -67,7 +67,7 @@
 
           <p> My research focuses on designing scalable, reliable and manageable distributed systems, which include topics on resource management in big data analytics, fault-tolerant network architecture, and strongly consistent and ultrafast key-value service using programmable data-plane networks (P4). </p>
 
-          <p> I worked as a Ph.D./research intern at Facebook (summer 2017) and Microsoft Research (summer 2015). Before coming to Princeton, I received my B.Sc. in Computer Science from <a href="http://eecs.pku.edu.cn">School of Electronics Engineering and Computer Science</a> at <a href="http://english.pku.edu.cn">Peking University</a> in Beijing. I also received my B.A. in Economics (double major) from <a href="http://en.nsd.edu.cn">National School of Development</a>.</p>
+          <p> Previously, I interned at Facebook (summer 2017) and Microsoft Research (summer 2015). Before coming to Princeton, I received my B.Sc. in Computer Science from <a href="http://eecs.pku.edu.cn">School of Electronics Engineering and Computer Science</a> at <a href="http://english.pku.edu.cn">Peking University</a> in Beijing. I also received my B.A. in Economics (double major) from <a href="http://en.nsd.edu.cn">National School of Development</a>.</p>
         <br/> <br/> 
         <p>Email: haoyuz [AT] cs [DOT] princeton [DOT] edu</p>
         <br/> <br/> 
@@ -103,7 +103,7 @@
         </div>
         <div class="media-body">
           <h4 class="media-heading">Facebook, Menlo Park</h4>
-          <p>Ph.D. Intern, 06/2017--09/2017<br />
+          <p>Ph.D. Software Engineer Intern, 06/2017--08/2017<br />
              Mentors: <a href="https://www.linkedin.com/in/chobrian/">Brian Cho</a>, <a href="https://www.linkedin.com/in/erginseyfe/">Ergin Seyfe</a></p>
         </div>
       </div>
@@ -169,7 +169,7 @@
       -->
      
       <div class="page-header" id="projects">
-        <h1>Projects</h1>
+        <h1>Publications</h1>
       </div>
 
       <br />
@@ -177,7 +177,9 @@
       <div class="row featurette">
         <div class="col-md-9">
           <h4 class="featurette-heading"> SLAQ: Quality-Driven Scheduling for Distributed Machine Learning </h4>
-          <p> Training machine learning models with large datasets can incur significant resource contention on shared clusters. Yet in exploratory settings, better models can be obtained faster by directing resources to jobs with the most potential for improvement. SLAQ is a cluster scheduling system for approximate ML training jobs that aims to maximize the overall job quality. Experiments show that SLAQ achieves a quality improvement of up to 73% and a delay reduction of up to 44%. [<a href="https://acmsocc.github.io/2017/">SoCC '17</a> <i>To Appear</i>]</p>
+          <p> Haoyu Zhang, Logan Stafman, Andrew Or, Michael J. Freedman </p>
+          <p> Training machine learning models with large datasets can incur significant resource contention on shared clusters. Yet in exploratory settings, better models can be obtained faster by directing resources to jobs with the most potential for improvement. SLAQ is a cluster scheduling system for approximate ML training jobs that aims to maximize the overall job quality. Experiments show that SLAQ achieves a quality improvement of up to 73% and a delay reduction of up to 44%.</p>
+          <p> In Proc. <i>ACM Symposium on Cloud Computing (<a href="https://acmsocc.github.io/2017/">SoCC ’17</a>)</i>. Santa Clara, CA, USA <p>
         </div>
         <div class="col-md-3">
           <img class="featurette-image img-responsive img-thumbnail"  src="images/slaq.png" alt="SLAQ Scheduler" style="width:256px;" />
@@ -188,11 +190,13 @@
 
       <div class="row featurette">
         <div class="col-md-3">
-          <img class="featurette-image img-responsive img-thumbnail"  src="images/videostorm.png" alt="Distributed Video Analytics" style="width:256px;" />
+          <img class="featurette-image img-responsive img-thumbnail"  src="images/netcache.png" alt="SLAQ Scheduler" style="width:256px;" />
         </div>
         <div class="col-md-9">
-          <h4 class="featurette-heading"> Live Video Analytics at Scale with Approximation and Delay-Tolerance </h4>
-          <p> VideoStorm is a video analytics system that processes thousands of vision analytics queries on live video streams over large clusters. An offline profiler generates query resource-quality profile, and an online scheduler allocates resources to queries to maximize video processing performance. Deployment on an Azure cluster of a hundred machines shows improvement by as much as 80% in quality of real-world queries and 7x better lag, processing video from operational traffic cameras. [<a href="publications/videostorm-nsdi17.pdf">NSDI '17</a>] </p>
+          <h4 class="featurette-heading"> NetCache: Balancing Key-Value Stores with Fast In-Network Caching </h4>
+          <p> Xin Jin, Xiaozhou Li, Haoyu Zhang, Robert Soule, Nate Foster, Jeongkeun Lee, Changhoon Kim, Ion Stoica </p>
+          <p> NetCache is a new key-value store architecture that leverages the power and flexibility of P4 switches to handle queries on hot items and balance the load across storage nodes. The core is a packet-processing pipeline that exploits the capabilities of modern programmable switch ASICs to efficiently detect, index, cache and serve hot key-value items in the switch data plane. We implement a NetCache prototype on Barefoot Tofino switches and demonstrate that a single switch can process 2+ billion queries per second. </p>
+          <p> In Proc. <i>ACM Symposium on Operating Systems Principles (<a href="https://www.sigops.org/sosp/sosp17/">SOSP '17</a>)</i>, Shanghai, China </p>
         </div>
       </div>
 
@@ -200,11 +204,27 @@
 
       <div class="row featurette">
         <div class="col-md-9">
-          <h4 class="featurette-heading"> Ravana: Controller Fault-Tolerance in Software-Defined Networking </h4>
-          <p> Ravana is a fault-tolerant SDN controller platform that processes the control messages trasactionally and exactly once at both the controllers and the switches. The protocol guarantees strong consistency across controller replicas during controller and switch failures, by extending replicated state machines with lightweight switch-side mechanisms. Ravana enables unmodified controller applications to execute in fault-tolerant fashion. [<a href="publications/ravana-sosr15.pdf">SOSR '15</a>] </p>
+          <h4 class="featurette-heading"> <a href="publications/videostorm-nsdi17.pdf"> Live Video Analytics at Scale with Approximation and Delay-Tolerance </a> </h4>
+		  <p> Haoyu Zhang, Ganesh Ananthanarayanan, Peter Bodik, Matthai Philipose, Victor Bahl, Michael J. Freedman </p>
+          <p> VideoStorm is a video analytics system that processes thousands of vision analytics queries on live video streams over large clusters. An offline profiler generates query resource-quality profile, and an online scheduler allocates resources to queries to maximize video processing performance. Deployment on an Azure cluster of a hundred machines shows improvement by as much as 80% in quality of real-world queries and 7x better lag, processing video from operational traffic cameras. </p>
+          <p> In Proc. <i>Symposium on Networked Systems Design and Implementation (<a href="https://www.usenix.org/conference/nsdi17">NSDI '17</a>)</i>, Boston, MA, USA </p>
         </div>
         <div class="col-md-3">
+          <img class="featurette-image img-responsive img-thumbnail"  src="images/videostorm.png" alt="Distributed Video Analytics" style="width:256px;" />
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row featurette">
+        <div class="col-md-3">
           <img class="featurette-image img-responsive img-thumbnail"  src="images/ravana.png" alt="Ravana Fault-Tolerant Controller" style="width:256px;" />
+        </div>
+        <div class="col-md-9">
+          <h4 class="featurette-heading"> <a href="publications/ravana-sosr15.pdf"> Ravana: Controller Fault-Tolerance in Software-Defined Networking </a> </h4>
+		  <p> Naga Katta, Haoyu Zhang, Michael J. Freedman, Jennifer Rexford </p>
+          <p> Ravana is a fault-tolerant SDN controller platform that processes the control messages trasactionally and exactly once at both the controllers and the switches. The protocol guarantees strong consistency across controller replicas during controller and switch failures, by extending replicated state machines with lightweight switch-side mechanisms. Ravana enables unmodified controller applications to execute in fault-tolerant fashion. </p>
+ 		  <p> In Proc. <i>ACM Symposium on SDN Research (<a href="http://opennetsummit.org/2015-archive/sosr/">SOSR '15</a>)</i>. Santa Clara, CA, USA </p>
         </div>
       </div>
 
