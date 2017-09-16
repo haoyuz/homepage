@@ -4,9 +4,10 @@ body {
 }
 
 #header {
-  padding-top: 80px;
-  height: 600px;
-  background: url(../images/top.jpg) no-repeat center center fixed;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  height: auto;
+  background: url(../images/top.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,7 +17,7 @@ body {
 #about-img {
   margin-top: 80px;
   height: 200px;
-  background: url(../images/fallingwater.jpg) no-repeat center center fixed;
+  background: url(../images/fallingwater.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +27,7 @@ body {
 #contact-img {
   margin-top: 80px;
   height: 200px;
-  background: url(../images/technion.jpg) no-repeat center center fixed;
+  background: url(../images/technion.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
