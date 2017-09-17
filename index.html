@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="jumbotron" id="header">
+    <div class="jumbotron header-img" id="header">
       <div class="container" style="color:white">
         <h1>Haoyu Zhang</h1>
         <h3>Ph.D. Student in Computer Science</h3>
@@ -71,7 +71,7 @@
 
           <p> Previously, I interned at <a href="https://www.facebook.com/">Facebook</a> (summer 2017) and <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (summer 2015). Before coming to Princeton, I received my B.Sc. in Computer Science from <a href="http://eecs.pku.edu.cn">School of Electronics Engineering and Computer Science</a> at <a href="http://english.pku.edu.cn">Peking University</a> in Beijing. I also received my B.A. in Economics (double major) from <a href="http://en.nsd.edu.cn">National School of Development</a>.</p>
         <br/> <br/> 
-        <p>Email: haoyuz [AT] cs [DOT] princeton [DOT] edu</p>
+        <p>Email: haoyuz [AT] cs.princeton.edu</p>
         <br/> <br/> 
 
         </div>
@@ -178,7 +178,7 @@
 
       <div class="row featurette">
         <div class="col-md-9">
-          <h4 class="featurette-heading"> SLAQ: Quality-Driven Scheduling for Distributed Machine Learning [<a href="publications/slaq-socc17.pdf">PDF</a>] </h4>
+          <h4 class="featurette-heading"> SLAQ: Quality-Driven Scheduling for Distributed Machine Learning [<a href="publications/slaq-socc17.pdf">PDF</a>] [<a href="publications/slaq-socc17.bib.txt">BibTeX</a>]</h4>
           <p> Haoyu Zhang, Logan Stafman, Andrew Or, Michael J. Freedman </p>
           <p> Training machine learning models with large datasets can incur significant resource contention on shared clusters. Yet in exploratory settings, better models can be obtained faster by directing resources to jobs with the most potential for improvement. SLAQ is a cluster scheduling system for approximate ML training jobs that aims to maximize the overall job quality. Experiments show that SLAQ achieves a quality improvement of up to 73% and a delay reduction of up to 44%.</p>
           <p> In Proc. <i>ACM Symposium on Cloud Computing (<a href="https://acmsocc.github.io/2017/">SoCC ’17</a>)</i>. Santa Clara, CA, USA <p>
@@ -195,7 +195,7 @@
           <img class="featurette-image img-responsive img-thumbnail"  src="images/netcache.png" alt="SLAQ Scheduler" style="width:256px;" />
         </div>
         <div class="col-md-9">
-          <h4 class="featurette-heading"> NetCache: Balancing Key-Value Stores with Fast In-Network Caching </h4>
+          <h4 class="featurette-heading"> NetCache: Balancing Key-Value Stores with Fast In-Network Caching [PDF] [<a href="publications/netcache-sosp17.bib.txt">BibTeX</a>]</h4>
           <p> Xin Jin, Xiaozhou Li, Haoyu Zhang, Robert Soule, Nate Foster, Jeongkeun Lee, Changhoon Kim, Ion Stoica </p>
           <p> NetCache is a new key-value store architecture that leverages the power and flexibility of P4 switches to handle queries on hot items and balance the load across storage nodes. The core is a packet-processing pipeline that exploits the capabilities of modern programmable switch ASICs to efficiently detect, index, cache and serve hot key-value items in the switch data plane. We implement a NetCache prototype on Barefoot Tofino switches and demonstrate that a single switch can process 2+ billion queries per second. </p>
           <p> In Proc. <i>ACM Symposium on Operating Systems Principles (<a href="https://www.sigops.org/sosp/sosp17/">SOSP '17</a>)</i>. Shanghai, China </p>
@@ -206,7 +206,7 @@
 
       <div class="row featurette">
         <div class="col-md-9">
-          <h4 class="featurette-heading"> Live Video Analytics at Scale with Approximation and Delay-Tolerance [<a href="publications/videostorm-nsdi17.pdf">PDF</a>] [<a href="publications/videostorm-slides.pdf">Slides</a>] </h4>
+          <h4 class="featurette-heading"> Live Video Analytics at Scale with Approximation and Delay-Tolerance [<a href="publications/videostorm-nsdi17.pdf">PDF</a>] [<a href="publications/videostorm-slides.pdf">Slides</a>] [<a href="publications/videostorm-nsdi17.bib.txt">BibTeX</a>] </h4>
 		  <p> Haoyu Zhang, Ganesh Ananthanarayanan, Peter Bodik, Matthai Philipose, Victor Bahl, Michael J. Freedman </p>
           <p> VideoStorm is a video analytics system that processes thousands of vision analytics queries on live video streams over large clusters. An offline profiler generates query resource-quality profile, and an online scheduler allocates resources to queries to maximize video processing performance. Deployment on an Azure cluster of a hundred machines shows improvement by as much as 80% in quality of real-world queries and 7x better lag, processing video from operational traffic cameras. </p>
           <p> In Proc. <i>Symposium on Networked Systems Design and Implementation (<a href="https://www.usenix.org/conference/nsdi17">NSDI '17</a>)</i>. Boston, MA, USA </p>
@@ -223,7 +223,7 @@
           <img class="featurette-image img-responsive img-thumbnail"  src="images/ravana.png" alt="Ravana Fault-Tolerant Controller" style="width:256px;" />
         </div>
         <div class="col-md-9">
-          <h4 class="featurette-heading"> Ravana: Controller Fault-Tolerance in Software-Defined Networking [<a href="publications/ravana-sosr15.pdf">PDF</a>] </h4>
+          <h4 class="featurette-heading"> Ravana: Controller Fault-Tolerance in Software-Defined Networking [<a href="publications/ravana-sosr15.pdf">PDF</a>] [<a href="publications/ravana-sosr15.bib.txt">BibTeX</a>] </h4>
 		  <p> Naga Katta, Haoyu Zhang, Michael J. Freedman, Jennifer Rexford </p>
           <p> Ravana is a fault-tolerant SDN controller platform that processes the control messages transactionally and exactly once at both the controllers and the switches. The protocol guarantees strong consistency across controller replicas during controller and switch failures, by extending replicated state machines with lightweight switch-side mechanisms. Ravana enables unmodified controller applications to execute in fault-tolerant fashion. </p>
  		  <p> In Proc. <i>ACM Symposium on SDN Research (<a href="http://opennetsummit.org/2015-archive/sosr/">SOSR '15</a>)</i>. Santa Clara, CA, USA </p>
@@ -246,7 +246,7 @@
       -->
     </div> <!-- /container -->
 
-    <div id="about-img">
+    <div id="about-img" class="about-img">
     </div>
 
     <div class="container theme-showcase maintext">
@@ -262,7 +262,7 @@
           <li> The photo above Contact section was the "Beida Contingent" traveling at <a href="http://en.wikipedia.org/wiki/Jerusalem">Jerusalem</a>.</li></ul>
     </div> <!-- /container -->
 
-    <div id="contact-img">
+    <div id="contact-img" class="contact-img">
     </div>
 
     <div class="container theme-showcase maintext">
@@ -277,7 +277,7 @@
         </div>
         <div class="col-md-8">
           <table>
-            <tr><td>Email:</td><td>haoyuz [AT] cs [DOT] princeton [DOT] edu</td></tr>
+            <tr><td>Email:</td><td>haoyuz [AT] cs.princeton.edu</td></tr>
             <tr><td>&nbsp;</td><td></td></tr>
             <tr><td>Phone:</td><td>(609) 258 [tu: &#952;ri: nain eit]</td></tr>
             <tr><td>&nbsp;</td><td></td></tr>

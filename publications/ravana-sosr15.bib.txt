@@ -1,0 +1,9 @@
+@inproceedings{ravana-sosr15,
+  author = {Katta, Naga and Zhang, Haoyu and Freedman, Michael and Rexford, Jennifer},
+  title = {{Ravana: Controller Fault-tolerance in Software-defined Networking}},
+  booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research},
+  series = {SOSR '15},
+  year = {2015},
+  location = {Santa Clara, California},
+  numpages = {12},
+}

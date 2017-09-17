@@ -1,0 +1,8 @@
+@inproceedings{netcache-sosp17,
+  author = {Xin Jin and Xiaozhou Li and Haoyu Zhang and Robert Soule and Jeongkeun Lee and Nate Foster and Changhoon Kim and Ion Stoica}, 
+  title = {{NetCache: Balancing Key-Value Stores with Fast In-Network Caching}},
+  booktitle = {Proceedings of the 26th ACM Symposium on Operating Systems Principles},
+  series = {SOSP '17},
+  year = {2017},
+  location = {Shanghai, China},
+}

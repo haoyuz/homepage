@@ -1,0 +1,8 @@
+@inproceedings{slaq-socc17,
+  author = {Haoyu Zhang and Logan Stafman and Andrew Or and Michael J. Freedman}, 
+  title = {{SLAQ: Quality-Driven Scheduling for Distributed Machine Learning}},
+  booktitle = {Proceedings of ACM Symposium on Cloud Computing},
+  series = {SoCC '17},
+  year = {2017},
+  location = {Santa Clara, CA},
+}
