@@ -1,0 +1,8 @@
+@inproceedings{netchain-nsdi18,
+  author = {Xin Jin and Xiaozhou Li and Haoyu Zhang and Nate Foster and Jeongkeun Lee and Robert Soule and Changhoon Kim and Ion Stoica}, 
+  title = {{NetChain: Scale-Free Sub-RTT Coordination}},
+  booktitle = {15th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 18)},
+  series = {NSDI '18},
+  year = {2018},
+  location = {Renton, WA, USA},
+}

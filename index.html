@@ -49,6 +49,7 @@
             <li><a href="#">Home</a></li>
             <!-- For several sites, set the li to be "active" like the following -->
             <!-- <li class="active"><a href="#">Home</a></li> -->
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Publications</a></li>
             <li><a href="#about-img">About</a></li>
             <li><a href="#contact-img">Contact</a></li>
@@ -85,7 +86,7 @@
         </div>
       </div>
 
-      <div class="page-header">
+      <div class="page-header" id="experience">
         <h1>Experience</h1>
       </div>
 
@@ -183,11 +184,40 @@
 
       <div class="row featurette">
         <div class="col-md-9">
-          <h4 class="featurette-heading"> SLAQ: Quality-Driven Scheduling for Distributed Machine Learning [<a href="publications/slaq-socc17.pdf">PDF</a>] [<a href="publications/slaq-socc17.bib.txt">BibTeX</a>]</h4>
+          <h4 class="featurette-heading"> Riffle: Optimized Shuffle Service for Large-Scale Data Analytics [PDF] [Slides] [<a href="publications/riffle-eurosys18.bib.txt">BibTeX</a>]</h4>
+          <p> Haoyu Zhang, Brian Cho, Ergin Seyfe, Avery Ching, Michael J. Freedman </p>
+          <p> Shuffle operations become the scaling bottleneck when running many small tasks in multi-stage data analytics jobs, due to the superlinear increase in disk I/O operations as data volume increases. Riffle is an optimized shuffle service for big-data analytics frameworks that significantly improves I/O efficiency and scales to process petabytes of data. Using Riffle, Facebook's production jobs on Spark clusters with over 1,000 executors experience up to a 10x reduction in the number of shuffle I/O requests and 40% improvement in the end-to-end job completion time. </p>
+          <p> In Proc. <i>European Conference on Computer Systems (<a href="http://eurosys2018.org/">EuroSys '18</a>)</i>. Porto, Portugal <p>
+        </div>
+        <div class="col-md-3">
+          <img class="featurette-image img-responsive img-thumbnail"  src="images/riffle.png" alt="Riffle" style="width:256px;" />
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <img class="featurette-image img-responsive img-thumbnail"  src="images/netchain.png" alt="NetChain" style="width:256px;" />
+        </div>
+        <div class="col-md-9">
+          <h4 class="featurette-heading"> NetChain: Scale-Free Sub-RTT Coordination [PDF] [<a href="publications/netchain-nsdi18.bib.txt">BibTeX</a>]</h4>
+          <p> Xin Jin, Xiaozhou Li, Haoyu Zhang, Nate Foster, Jeongkeun Lee, Robert Soule, Changhoon Kim, Ion Stoica </p>
+          <p> Coordination services are a fundamental building block of modern cloud systems. NetChain provides scale-free sub-RTT coordination, by exploiting recent advances in programmable switches to store data and process queries entirely in the network data plane. Evaluation results show that our systems provides orders of magnitude higher throughput and lower latency, and handles failures gracefully. </p>
+          <p> In Proc. <i>Symposium on Networked Systems Design and Implementation (<a href="https://www.usenix.org/conference/nsdi18">NSDI '18</a>)</i>. Renton, WA, USA </p>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row featurette">
+        <div class="col-md-9">
+          <h4 class="featurette-heading"> SLAQ: Quality-Driven Scheduling for Distributed Machine Learning [<a href="publications/slaq-socc17.pdf">PDF</a>] [<a href="publications/slaq-slides.pdf">Slides</a>] [<a href="publications/slaq-socc17.bib.txt">BibTeX</a>]</h4>
           <p> Haoyu Zhang, Logan Stafman, Andrew Or, Michael J. Freedman </p>
           <p> Training machine learning models with large datasets can incur significant resource contention on shared clusters. Yet in exploratory settings, better models can be obtained faster by directing resources to jobs with the most potential for improvement. SLAQ is a cluster scheduling system for approximate ML training jobs that aims to maximize the overall job quality. Experiments show that SLAQ achieves a quality improvement of up to 73% and a delay reduction of up to 44%.</p>
-          <p> In Proc. <i>ACM Symposium on Cloud Computing (<a href="https://acmsocc.github.io/2017/">SoCC ’17</a>)</i>. Santa Clara, CA, USA <p>
+          <p> In Proc. <i>ACM Symposium on Cloud Computing (<a href="https://acmsocc.github.io/2017/">SoCC '17</a>)</i>. Santa Clara, CA, USA <p>
           <p style="color:Orange;"> <i class="fa fa-trophy"> </i> <i> Best Paper Award </i> <p>
+          <p> Poster at <i> the 1st SysML Conference (<a href="http://www.sysml.cc">SysML '18</a>)</i>. Stanford, CA, USA <p>
         </div>
         <div class="col-md-3">
           <img class="featurette-image img-responsive img-thumbnail"  src="images/slaq.png" alt="SLAQ Scheduler" style="width:256px;" />
@@ -198,7 +228,7 @@
 
       <div class="row featurette">
         <div class="col-md-3">
-          <img class="featurette-image img-responsive img-thumbnail"  src="images/netcache.png" alt="SLAQ Scheduler" style="width:256px;" />
+          <img class="featurette-image img-responsive img-thumbnail"  src="images/netcache.png" alt="NetCache" style="width:256px;" />
         </div>
         <div class="col-md-9">
           <h4 class="featurette-heading"> NetCache: Balancing Key-Value Stores with Fast In-Network Caching [<a href="publications/netcache-sosp17.pdf">PDF</a>] [<a href="publications/netcache-sosp17.bib.txt">BibTeX</a>]</h4>
@@ -297,8 +327,6 @@
                 <li class="linkedin"><a href="http://www.linkedin.com/in/haoyuz">LinkedIn</a></li>
                 <li class="facebook"><a href="http://www.facebook.com/zhhaoyu">Facebook</a></li>
                 <li class="googleplus"><a href="https://plus.google.com/u/0/102592331301170007620/posts">Google+</a></li>
-                <li class="weibo"><a href="http://www.weibo.com/zhhaoyu">Weibo</a></li>
-                <li class="renren"><a href="http://www.renren.com/zhhaoyu">RenRen</a></li>
               </ul>
             </td></tr>
           </table>
@@ -307,7 +335,7 @@
 
       <hr>
       <footer>
-        <p>&copy; Haoyu Zhang, 2013--2017</p>
+        <p>&copy; Haoyu Zhang, 2013--2018</p>
       </footer>
 
     </div> <!-- /container -->

@@ -4,6 +4,6 @@ and building scalable and highly efficient distributed systems for big-data
 analytics and machine learning, fault-tolerant network architecture, and
 strongly consistent and ultrafast key-value service with programmable networks
 (P4). He has published in several systems conferences including NSDI, SOSP and
-SOCC, and won the Best Paper Award at ACM SOCC 2017. He previously interned at
+EuroSys, and won the Best Paper Award at ACM SOCC. He previously interned at
 Facebook and Microsoft Research, working on optimized Spark shuffle service and
 video analytics systems, both deployed and running in production.
