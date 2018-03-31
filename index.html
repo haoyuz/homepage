@@ -73,7 +73,7 @@
 
           <p> My research focuses on designing scalable, reliable and manageable distributed systems, which include topics on resource management in big-data analytics and machine learning, fault-tolerant network architecture, and strongly consistent and ultrafast key-value service using programmable networks (P4). </p>
 
-          <p> Previously, I interned at <a href="https://www.facebook.com/">Facebook</a> (summer 2017) and <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (summer 2015). Before coming to Princeton, I received my B.Sc. in Computer Science from <a href="http://eecs.pku.edu.cn">School of Electronics Engineering and Computer Science</a> at <a href="http://english.pku.edu.cn">Peking University</a> in Beijing. I also received my B.A. in Economics (double major) from <a href="http://en.nsd.edu.cn">National School of Development</a>.</p>
+          <p> Previously, I interned at <a href="https://www.facebook.com/">Facebook</a> (summer 2017) and <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (summer 2015). Before coming to Princeton, I received my B.Sc. in Computer Science from <a href="http://eecs.pku.edu.cn">School of Electronics Engineering and Computer Science</a> at <a href="http://english.pku.edu.cn">Peking University</a> in Beijing. I also received my B.A. in Economics (double major) from <a href="http://nsd.pku.edu.cn">National School of Development</a>.</p>
         <br/>
         <p>Email: haoyuz (at) cs (dot) princeton (dot) edu</p>
         <p>[<a href="files/bio-haoyu-zhang.txt">Bio</a>] [<a href="files/cv-haoyu-zhang.pdf">CV</a>]</p>
@@ -184,7 +184,7 @@
 
       <div class="row featurette">
         <div class="col-md-9">
-          <h4 class="featurette-heading"> Riffle: Optimized Shuffle Service for Large-Scale Data Analytics [PDF] [Slides] [<a href="publications/riffle-eurosys18.bib.txt">BibTeX</a>]</h4>
+          <h4 class="featurette-heading"> Riffle: Optimized Shuffle Service for Large-Scale Data Analytics [<a href="publications/riffle-eurosys18.pdf">PDF</a>] [Slides] [<a href="publications/riffle-eurosys18.bib.txt">BibTeX</a>]</h4>
           <p> Haoyu Zhang, Brian Cho, Ergin Seyfe, Avery Ching, Michael J. Freedman </p>
           <p> Shuffle operations become the scaling bottleneck when running many small tasks in multi-stage data analytics jobs, due to the superlinear increase in disk I/O operations as data volume increases. Riffle is an optimized shuffle service for big-data analytics frameworks that significantly improves I/O efficiency and scales to process petabytes of data. Using Riffle, Facebook's production jobs on Spark clusters with over 1,000 executors experience up to a 10x reduction in the number of shuffle I/O requests and 40% improvement in the end-to-end job completion time. </p>
           <p> <i>European Conference on Computer Systems (<a href="http://eurosys2018.org/">EuroSys '18</a>)</i>. Porto, Portugal <p>
@@ -201,7 +201,7 @@
           <img class="featurette-image img-responsive img-thumbnail"  src="images/netchain.png" alt="NetChain" style="width:256px;" />
         </div>
         <div class="col-md-9">
-          <h4 class="featurette-heading"> NetChain: Scale-Free Sub-RTT Coordination [PDF] [<a href="publications/netchain-nsdi18.bib.txt">BibTeX</a>]</h4>
+          <h4 class="featurette-heading"> NetChain: Scale-Free Sub-RTT Coordination [<a href="">PDF</a>] [<a href="https://arxiv.org/abs/1802.08236">Extended Version</a>] [<a href="publications/netchain-nsdi18.bib.txt">BibTeX</a>]</h4>
           <p> Xin Jin, Xiaozhou Li, Haoyu Zhang, Nate Foster, Jeongkeun Lee, Robert Soule, Changhoon Kim, Ion Stoica </p>
           <p> Coordination services are a fundamental building block of modern cloud systems. NetChain provides scale-free sub-RTT coordination, by exploiting recent advances in programmable switches to store data and process queries entirely in the network data plane. Evaluation results show that our systems provides orders of magnitude higher throughput and lower latency, and handles failures gracefully. </p>
           <p> <i>USENIX Symposium on Networked Systems Design and Implementation (<a href="https://www.usenix.org/conference/nsdi18">NSDI '18</a>)</i>. Renton, WA, USA </p>
@@ -217,7 +217,7 @@
           <p> Training machine learning models with large datasets can incur significant resource contention on shared clusters. Yet in exploratory settings, better models can be obtained faster by directing resources to jobs with the most potential for improvement. SLAQ is a cluster scheduling system for approximate ML training jobs that aims to maximize the overall job quality. Experiments show that SLAQ achieves a quality improvement of up to 73% and a delay reduction of up to 44%.</p>
           <p> <i>ACM Symposium on Cloud Computing (<a href="https://acmsocc.github.io/2017/">SoCC '17</a>)</i>. Santa Clara, CA, USA <p>
           <p style="color:Orange;"> <i class="fa fa-trophy"> </i> <i> Best Paper Award </i> <p>
-          <p> Poster at <i> the 1st SysML Conference (<a href="http://www.sysml.cc">SysML '18</a>)</i>. Stanford, CA, USA <p>
+          <p> Poster (<a href="https://arxiv.org/abs/1802.04819">extended abstract</a>) at <i> the 1st SysML Conference (<a href="http://www.sysml.cc">SysML '18</a>)</i>. Stanford, CA, USA <p>
         </div>
         <div class="col-md-3">
           <img class="featurette-image img-responsive img-thumbnail"  src="images/slaq.png" alt="SLAQ Scheduler" style="width:256px;" />
@@ -231,7 +231,7 @@
           <img class="featurette-image img-responsive img-thumbnail"  src="images/netcache.png" alt="NetCache" style="width:256px;" />
         </div>
         <div class="col-md-9">
-          <h4 class="featurette-heading"> NetCache: Balancing Key-Value Stores with Fast In-Network Caching [<a href="publications/netcache-sosp17.pdf">PDF</a>] [<a href="publications/netcache-sosp17.bib.txt">BibTeX</a>]</h4>
+          <h4 class="featurette-heading"> NetCache: Balancing Key-Value Stores with Fast In-Network Caching [<a href="publications/netcache-sosp17.pdf">PDF</a>] [<a href="publications/netcache-sosp17-slides-xiaozhou.pdf">Slides</a>] [<a href="publications/netcache-sosp17.bib.txt">BibTeX</a>]</h4>
           <p> Xin Jin, Xiaozhou Li, Haoyu Zhang, Robert Soule, Nate Foster, Jeongkeun Lee, Changhoon Kim, Ion Stoica </p>
           <p> NetCache is a new key-value store architecture that leverages the power and flexibility of P4 switches to handle queries on hot items and balance the load across storage nodes. The core is a packet-processing pipeline that exploits the capabilities of modern programmable switch ASICs to efficiently detect, index, cache and serve hot key-value items in the switch data plane. We implement a NetCache prototype on Barefoot Tofino switches and demonstrate that a single switch can process 2+ billion queries per second. </p>
           <p> <i>ACM Symposium on Operating Systems Principles (<a href="https://www.sigops.org/sosp/sosp17/">SOSP '17</a>)</i>. Shanghai, China </p>
@@ -325,6 +325,7 @@
             <tr><td>Find me on:&nbsp;&nbsp;</td><td>
               <ul class="social">
                 <li class="linkedin"><a href="http://www.linkedin.com/in/haoyuz">LinkedIn</a></li>
+                <li class="github"><a href="https://github.com/haoyuz">GitHub</a></li>
                 <li class="facebook"><a href="http://www.facebook.com/zhhaoyu">Facebook</a></li>
                 <li class="googleplus"><a href="https://plus.google.com/u/0/102592331301170007620/posts">Google+</a></li>
               </ul>

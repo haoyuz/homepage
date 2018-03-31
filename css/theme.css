@@ -104,6 +104,12 @@ table {
 	height:32px;
 	display:block;
 }
+.social li.github a{
+	background:url(../images/icon_github.png) no-repeat;
+	width:32px;
+	height:32px;
+	display:block;
+}
 .social li a{
 	opacity:.5;
 	-webkit-transition: all 0.3s ease;
