@@ -1,9 +1,9 @@
 @inproceedings{riffle-eurosys18,
-  author = {Haoyu Zhang, Brian Cho, Ergin Seyfe, Avery Ching, Michael J. Freedman}, 
+  author = {Haoyu Zhang and Brian Cho and Ergin Seyfe and Avery Ching and Michael J. Freedman}, 
   title = {{Riffle: Optimized Shuffle Service for Large-Scale Data Analytics}},
   booktitle = {Proceedings of European Conference on Computer Systems},
   series = {EuroSys '18},
   year = {2018},
-  location = {Porto, Portugal, April 2018},
+  location = {Porto, Portugal},
 }
 
