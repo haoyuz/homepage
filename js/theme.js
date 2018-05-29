@@ -2,6 +2,6 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
     estr = "me" + "@" + "haoyuzhang" + "." + "org";
-    $('span.estr').html("<span class='text-primary'>" + estr + "</a>");
+    $('span.estr').html(estr);
 });
 
