@@ -1,0 +1,7 @@
+@phdthesis{haoyu-zhang-phd-thesis,
+  author = {Haoyu Zhang},
+  title = {{Resource Management for Advanced Data Analytics at Large Scale}},
+  publisher = {Princeton University Computer Science Department},
+  address = {Princeton, NJ, USA},
+  year = {2018},
+}
