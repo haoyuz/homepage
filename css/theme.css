@@ -17,42 +17,10 @@ body {
   background-size: cover;
 }
 
-.services-img {
-  margin-top: 80px;
-  height: 200px;
-  background: url(../images/fallingwater.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.contact-img {
-  margin-top: 80px;
-  height: 200px;
-  background: url(../images/technion.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
   .header-img {
-    background-attachment: scroll;
-  }
-  .about-img {
-    background-attachment: scroll;
-  }
-  .contact-img {
     background-attachment: scroll;
   }
 }
